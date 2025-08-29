@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics & Box Model Demo</title>
+    <!-- External CSS Stylesheet Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <h1 class="site-title">CSS Fundamentals Showcase</h1>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li><a href="#intro" class="nav-link">Introduction</a></li>
+                <li><a href="#box-model" class="nav-link">Box Model</a></li>
+                <li><a href="#typography" class="nav-link">Typography</a></li>
+                <li><a href="#layout" class="nav-link">Layout</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+        
+        <!-- Introduction Section -->
+        <section id="intro" class="intro-section">
+            <div class="container">
+                <h2 class="section-title">Welcome to CSS Fundamentals</h2>
+                <p class="intro-text">
+                    This page demonstrates the core concepts of CSS including basic styling properties, 
+                    the CSS Box Model, and how different elements interact with spacing and layout. 
+                    Every element you see has been carefully styled to showcase various CSS techniques.
+                </p>
+                
+                <div class="highlight-box">
+                    <h3>Key Concepts Demonstrated</h3>
+                    <ul class="concept-list">
+                        <li>External stylesheet connection</li>
+                        <li>CSS selectors and specificity</li>
+                        <li>Typography and color styling</li>
+                        <li>Box Model: margin, padding, and borders</li>
+                        <li>Background properties and visual hierarchy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Box Model Demonstration -->
+        <section id="box-model" class="box-model-section">
+            <div class="container">
+                <h2 class="section-title">CSS Box Model in Action</h2>
+                <p class="section-description">
+                    The CSS Box Model consists of content, padding, border, and margin. 
+                    Below are visual examples showing how each component affects the total space an element occupies.
+                </p>
+
+                <div class="box-examples">
+                    <!-- Content Only Box -->
+                    <div class="box-example content-only">
+                        <h4>Content Only</h4>
+                        <p>This box has no padding, border, or margin. Only the content area is visible.</p>
+                    </div>
+
+                    <!-- Padding Example -->
+                    <div class="box-example padding-example">
+                        <h4>With Padding</h4>
+                        <p>This box has 20px padding on all sides, creating space inside the border.</p>
+                    </div>
+
+                    <!-- Border Example -->
+                    <div class="box-example border-example">
+                        <h4>With Border</h4>
+                        <p>This box has a 3px solid border, adding to the total element width and height.</p>
+                    </div>
+
+                    <!-- Full Box Model -->
+                    <div class="box-example full-box-model">
+                        <h4>Complete Box Model</h4>
+                        <p>This box demonstrates padding (15px), border (2px), and margin (20px) all working together.</p>
+                    </div>
+                </div>
+
+                <!-- Box Model Visualization -->
+                <div class="box-model-visual">
+                    <h3>Box Model Layers</h3>
+                    <div class="box-layers">
+                        <div class="margin-layer">
+                            <span class="layer-label">Margin</span>
+                            <div class="border-layer">
+                                <span class="layer-label">Border</span>
+                                <div class="padding-layer">
+                                    <span class="layer-label">Padding</span>
+                                    <div class="content-layer">
+                                        <span class="layer-label">Content</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section id="typography" class="typography-section">
+            <div class="container">
+                <h2 class="section-title">Typography & Text Styling</h2>
+                
+                <div class="typography-examples">
+                    <div class="text-sample">
+                        <h3 class="large-heading">Large Heading (32px)</h3>
+                        <h4 class="medium-heading">Medium Heading (24px)</h4>
+                        <h5 class="small-heading">Small Heading (18px)</h5>
+                        
+                        <p class="body-text">
+                            This is regular body text demonstrating normal paragraph styling with 
+                            proper line height and font sizing for optimal readability.
+                        </p>
+                        
+                        <p class="emphasized-text">
+                            This paragraph uses emphasized styling with different font weight 
+                            and color to draw attention to important information.
+                        </p>
+                        
+                        <p class="small-text">
+                            This is smaller text that might be used for captions, footnotes, 
+                            or less important information on the page.
+                        </p>
+                    </div>
+
+                    <div class="text-formatting">
+                        <h3>Text Formatting Examples</h3>
+                        <p>
+                            Here we have <strong class="bold-text">bold text</strong>, 
+                            <em class="italic-text">italic text</em>, 
+                            <span class="underlined-text">underlined text</span>, and 
+                            <span class="highlighted-text">highlighted text</span>.
+                        </p>
+                        
+                        <blockquote class="quote-block">
+                            "CSS is not just about making things look pretty. It's about creating 
+                            a structured, maintainable, and accessible visual language for the web."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Layout Examples -->
+        <section id="layout" class="layout-section">
+            <div class="container">
+                <h2 class="section-title">Layout & Spacing Techniques</h2>
+                
+                <!-- Card Layout -->
+                <div class="card-container">
+                    <div class="card card-primary">
+                        <h3 class="card-title">Primary Card</h3>
+                        <p class="card-content">
+                            This card demonstrates how padding, margins, and borders work together 
+                            to create visually appealing content containers.
+                        </p>
+                        <button class="card-button btn-primary">Learn More</button>
+                    </div>
+
+                    <div class="card card-secondary">
+                        <h3 class="card-title">Secondary Card</h3>
+                        <p class="card-content">
+                            Each card has consistent internal spacing while maintaining 
+                            proper external margins for clean separation.
+                        </p>
+                        <button class="card-button btn-secondary">Explore</button>
+                    </div>
+
+                    <div class="card card-accent">
+                        <h3 class="card-title">Accent Card</h3>
+                        <p class="card-content">
+                            The box model ensures all cards align properly despite having 
+                            different background colors and styling treatments.
+                        </p>
+                        <button class="card-button btn-accent">Discover</button>
+                    </div>
+                </div>
+
+                <!-- Spacing Examples -->
+                <div class="spacing-demo">
+                    <h3>Margin and Padding Spacing</h3>
+                    <div class="spacing-example tight-spacing">
+                        <p>Tight spacing with minimal padding and margins</p>
+                    </div>
+                    <div class="spacing-example normal-spacing">
+                        <p>Normal spacing with balanced padding and margins</p>
+                    </div>
+                    <div class="spacing-example loose-spacing">
+                        <p>Loose spacing with generous padding and margins</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Elements -->
+        <section class="interactive-section">
+            <div class="container">
+                <h2 class="section-title">Interactive Elements & States</h2>
+                
+                <div class="button-showcase">
+                    <h3>Button Styling Examples</h3>
+                    <div class="button-group">
+                        <button class="btn btn-default">Default Button</button>
+                        <button class="btn btn-primary">Primary Button</button>
+                        <button class="btn btn-success">Success Button</button>
+                        <button class="btn btn-warning">Warning Button</button>
+                        <button class="btn btn-danger">Danger Button</button>
+                    </div>
+                </div>
+
+                <div class="form-example">
+                    <h3>Form Styling</h3>
+                    <form class="sample-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name:</label>
+                            <input type="text" id="name" class="form-input" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address:</label>
+                            <input type="email" id="email" class="form-input" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message:</label>
+                            <textarea id="message" class="form-textarea" placeholder="Enter your message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Information</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p class="contact-text">
+                            This CSS demonstration showcases fundamental styling concepts. 
+                            Each element has been carefully crafted to show different aspects 
+                            of the CSS Box Model and basic styling properties.
+                        </p>
+                        <div class="contact-details">
+                            <p><strong>Email:</strong> demo@cssbasics.com</p>
+                            <p><strong>Website:</strong> www.cssbasics.com</p>
+                            <p><strong>Course:</strong> Web Development Fundamentals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    &copy; 2024 CSS Fundamentals Demo. Created to demonstrate basic CSS properties and the Box Model.
+                </p>
+                <p class="footer-note">
+                    No JavaScript or external libraries used - Pure CSS styling only.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
